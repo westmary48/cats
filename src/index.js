@@ -1,8 +1,10 @@
 import $ from 'jquery';
 import 'bootstrap';
 import './index.scss';
-
+import catPhoto from './images/catsrule.jpg';
 import getCats from './catGetter';
+
+$('#catPhoto').attr('src', catPhoto);
 
 const createCatCards = (cats) => {
   let newString = '';
